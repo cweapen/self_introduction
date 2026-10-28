@@ -1,6 +1,6 @@
 # Java Backend · Personal Portfolio
 
-一个可以直接托管到 GitHub Pages 的静态个人主页，参考 Academic Pages 的「左侧个人介绍 + 右侧项目内容」信息架构，但**不是** Academic Pages/Jekyll 官方模板的改版；无需 Ruby、Jekyll、npm 或构建步骤。
+一个可以直接托管到 GitHub Pages 的静态个人主页，采用深色工程风格与「个人资料侧栏 + 内容主区」布局；无需 Ruby、Jekyll、npm 或构建步骤。
 
 ## 预览
 
@@ -10,10 +10,10 @@
 
 在 `index.html` 中搜索并修改以下占位内容：
 
-- `你的姓名`、`Your Name` 和头像 `DEV`
-- `your-email@example.com`
-- `https://github.com/` 改为自己的 Github 主页
-- `所在地：按需填写`
+- `清风`、`QINGFENG / DEV` 和头像 `DEV`
+- 将“邮箱待补充”替换为真实邮箱链接，并配置联系区域
+- 将“GitHub 主页待补充”替换为自己的 GitHub 主页链接
+- 按需修改“所在地暂未公开”
 - 项目介绍与实际公开范围；补充真实的项目仓库链接、截图、量化成果
 - 根据真实简历完善学校、学历、时间和可公开的身份资料
 
@@ -22,7 +22,7 @@
 ## 发布 GitHub Pages（无构建版本）
 
 1. 在 GitHub 新建公开仓库 `你的GitHub用户名.github.io`，以取得根域名 `https://你的GitHub用户名.github.io/`；也可以建普通仓库获得带项目名的 URL。
-2. 将 `index.html` 和 `README.md` 上传到仓库的默认分支根目录并提交。
+2. 将 `index.html`、`style.css`、`app.js` 和 `README.md` 上传到仓库的默认分支根目录并提交。
 3. 打开仓库 **Settings → Pages**，在 **Build and deployment** 中选择 **Deploy from a branch**，分支选择 `main`、目录选择 `/ (root)`，保存。
 4. 等待 GitHub 的 Pages 部署流程完成后，在 Settings → Pages 处查看实际发布 URL。
 
@@ -34,3 +34,13 @@
 - 将学习笔记变成 Markdown 驱动的博客（可迁移到 VitePress/Jekyll）。
 - 加入真实 Github 仓库、在线演示、简历 PDF 链接。
 - 扩展中英文双语版本。
+
+## 当前版本
+
+- 深色与青绿色视觉体系，适配桌面、平板与手机。
+- 工程流程示意、项目分类筛选与可展开项目详情。
+- 三篇可展开的学习笔记摘要、章节导航高亮与手机菜单。
+- 无外部字体、图片或运行依赖，断网也可直接打开。
+- `style.css` 管理新版视觉，`app.js` 管理项目筛选和章节导航。
+
+项目详情为基于现有概要补充的技术思路，正式展示前应结合真实实现核实。
